@@ -39,3 +39,37 @@ Connected, 2 nodes ar connected if there is a path from X to Y
 
 Connected Component of a graph is the subgraph in which for  
 every 2 nodes X and Y, X is connected to Y.
+
+Strongly Connected Graph  
+	 - Graph is connected if the whole graph is in a single connected compon	ent  
+
+Max number of edges in graph with n-nodes
+undirected:    
+	n + n(n-1)/2  
+
+directed:  n^2  
+
+
+Adjacency List - Use for sparse graphs
+Adjacency Matrix - Use for full graphs
+
+```java
+DFT(n){
+	// build stack
+	push(n) 
+	while(!stack.empty()){
+		h = pop()
+		if(!h.marked()){
+			h.visit
+			h.mark
+			pop through h neighboors
+			if(!i.marked)
+				push(i)
+		}
+	}
+
+} 
+
+```
+
+For breadth first change pool into queue

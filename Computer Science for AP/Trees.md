@@ -11,7 +11,7 @@ parent of a node is the node that is prev.
 
 Tree has 0 or 1 root.  
 
-Subtree:	
+Subtree:
 		-Tree formed by taking any node as a root  
 
 Count of most number of edges you follow  
@@ -38,7 +38,7 @@ Don’t need references can mathematically find children
 
 Use recursive methods to calculate things like height.  
 ##Tree Traversal
-       
+
 
 Breadth First Traversal  
 	- Visit each level, one at a time.  
@@ -47,7 +47,7 @@ Breadth First Traversal
 Depth First Traversal  
       	- Always visit you children first before visiting any neighboring node.  
 
-Pre Order Traversal 
+Pre Order Traversal
       	- Visit node before you visit any children.  
 
 Post Order Traversal  
@@ -66,7 +66,7 @@ void DFS(){
 
 void DFS(BTNode<E> h){
     if(h == null){
-        
+
     }
     else{
         DFS(h.left);
@@ -107,6 +107,20 @@ void insert(n, h)
 	     	       h.left = n
 	     else
 		insert(n, h.left)
-        else 
-	     // deal with stuff 
+        else
+	     // deal with stuff
 ```
+
+
+#Heap
+
+Ordered tree from top to bottom
+
+`
+    12  
+   /  \  
+  10   8  
+ /  \  
+3    4 `
+
+Priority queues almost always use heaps
